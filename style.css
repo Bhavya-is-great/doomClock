@@ -70,3 +70,42 @@ main .heading {
     border-radius: 50%;
     position: absolute;
 }
+
+.hourHand {
+    position: absolute;
+    height: 5px;
+    width: 70px;
+    background: #ffffff50;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transition: all 0.3s ease;
+    rotate: 270deg;
+    border-radius: 10px;
+}
+
+.minuteHnad {
+    position: absolute;
+    height: 5px;
+    width: 90px;
+    border-radius: 10px;
+    background: #ffffff50;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transition: all 0.3s ease;
+    rotate: 270deg;
+}
+
+.secondHand {
+    position: absolute;
+    height: 5px;
+    width: 110px;
+    background: #ffffff50;
+    top: 50%;
+    left: 50%;
+    rotate: 270deg;
+    transform-origin: left;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}

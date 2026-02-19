@@ -48,3 +48,26 @@ for (let i = 0; i < dotCount; i++) {
 
     clock.appendChild(dot);
 }
+
+const hourHand = document.querySelector(".hourHand");
+const minuteHand = document.querySelector(".minuteHnad");
+const secondHand = document.querySelector(".secondHand");
+
+function updateClock() {
+    const now = new Date();
+
+    const hours = now.getHours() % 12;
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    const hourRotation = 270 + hours * 30 + minutes * 0.5;
+    const minuteRotation = 270 + minutes * 6;
+    const secondRotation = 270 + seconds * 6;
+    
+    hourHand.style.rotate = `${hourRotation}deg`;
+    minuteHand.style.rotate = `${minuteRotation}deg`;
+    secondHand.style.rotate = `${secondRotation}deg`;
+}
+
+updateClock();
+setInterval(updateClock, 100);
