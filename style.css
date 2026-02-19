@@ -48,3 +48,25 @@ main .heading {
     position: absolute;
     transform: translate(-50%, -50%);
 }
+
+.dot {
+    position: absolute;
+    width: 4px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #ffffff50;
+    transform: translate(-50%, -50%);
+}
+
+.centerDot {
+    width: 10px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background: #ffffff50;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    position: absolute;
+}
